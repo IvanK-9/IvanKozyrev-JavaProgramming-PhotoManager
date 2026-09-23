@@ -4,13 +4,13 @@ public class Camera extends Equipment {
     private boolean isFullFrame;
 
     public Camera(String brand, String model, String mount, boolean isFullFrame) {
-        super(brand, model, mount); // Вызов конструктора родительского класса
+        super(brand, model, mount);
         this.isFullFrame = isFullFrame;
     }
 
     @Override
     public String toString() {
         String sensor = isFullFrame ? "Full Frame" : "Crop";
-        return "[Камера] " + super.toString() + " - " + sensor;
+        return "[Camera] " + super.toString() + " - " + sensor;
     }
 }

@@ -3,7 +3,7 @@ package photomanager;
 public abstract class Equipment {
     private String brand;
     private String model;
-    private String mount; // Байонет, например "Sony E" или "Canon EF"
+    private String mount; // Lens mount, e.g., "Sony E" or "Canon EF"
 
     public Equipment(String brand, String model, String mount) {
         this.brand = brand;
@@ -15,9 +15,8 @@ public abstract class Equipment {
         return mount;
     }
 
-    // Переопределяем метод для красивого вывода в консоль
     @Override
     public String toString() {
-        return brand + " " + model + " (Байонет: " + mount + ")";
+        return brand + " " + model + " (Mount: " + mount + ")";
     }
 }
